@@ -6,10 +6,7 @@ sudo apt update
 sudo apt upgrade -y
 
 echo "=== Installing base packages ==="
-sudo apt install -y 
-ca-certificates wget curl gnupg 
-fail2ban unattended-upgrades 
-software-properties-common haveged
+sudo apt install -y ca-certificates wget curl gnupg fail2ban unattended-upgrades software-properties-common haveged
 
 echo "=== Configuring Fail2Ban ==="
 sudo install -m 0644 /dev/null /etc/fail2ban/jail.local
